@@ -1,0 +1,107 @@
+body, ul, li, ol, li, dl, dt, dd, form, h1, h2, h3, h4, p, hr, tabel, tr, td, select, option, br, span, img, a, label, form, input, textarea, em, i, strong, b {
+	margin: 0;
+	padding: 0;
+}
+body { background: #fff; font-size:14px; }
+img { border: 0 none;display: block;}
+a { text-decoration: none;}
+li { list-style: none;}
+/*flex布局 css兼容*/
+.d-f{
+  display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+  display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+  display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+/*垂直显示*/
+.f-d-c{
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -moz-box-orient:vertical;
+  -moz-box-direction:normal;
+  flex-direction:column;
+  -webkit-flex-direction:column;
+}
+/*换行*/
+.f-w-w{
+  -webkit-flex-wrap:wrap;
+  -webkit-box-lines:multiple;
+  -moz-flex-wrap:wrap;
+  flex-wrap:wrap;
+}
+/*横向居中*/
+.j-c-c{
+  -webkit-justify-content:center;
+  justify-content:center;
+  -moz-box-pack:center;
+  -webkit--moz-box-pack:center;
+  box-pack:center;
+}
+/*横向 两端对齐，项目之间的间隔都相等*/
+.j-c-s-b{
+  -webkit-justify-content:space-between;
+  justify-content:space-between;
+  -moz-box-pack:space-between;
+  -webkit--moz-box-pack:space-between;
+  box-pack:space-between;
+}
+/*横向 每个项目两侧的间隔相等*/
+.j-c-s-a{
+  -webkit-justify-content:space-around;
+  justify-content:space-around;
+  -moz-box-pack:space-around;
+  -webkit--moz-box-pack:space-around;
+  box-pack:space-around;
+}
+/*横向 左对齐*/
+.j-c-f-s{
+  -webkit-justify-content:flex-start;
+  justify-content:flex-start;
+  -moz-box-pack:flex-start;
+  -webkit--moz-box-pack:flex-start;
+  box-pack:flex-start;
+}
+/*横向 右对齐*/
+.j-c-f-e{
+  -webkit-justify-content:flex-end;
+  justify-content:flex-end;
+  -moz-box-pack:flex-end;
+  -webkit--moz-box-pack:flex-end;
+  box-pack:flex-end;
+}
+/*竖向 居中*/
+.a-i-c{
+  align-items:center;
+  -webkit-align-items:center;
+  box-align:center;
+  -moz-box-align:center;
+  -webkit-box-align:center;
+}
+/*竖向 上对齐*/
+.a-i-f-s{
+  align-items:flex-start;
+  -webkit-align-items:flex-start;
+  box-align:flex-start;
+  -moz-box-align:flex-start;
+  -webkit-box-align:flex-start;
+}
+/*竖向 下对齐*/
+.a-i-f-e{
+  align-items:flex-end;
+  -webkit-align-items:flex-end;
+  box-align:flex-end;
+  -moz-box-align:flex-end;
+  -webkit-box-align:flex-end;
+}
+/*伸缩盒子布局兼容*/
+.f-1{
+  box-flex:1;
+  -webkit-box-flex:1;
+  -moz-box-flex:1;
+  flex:1;
+  -webkit-flex:1;
+}
+
+
+
